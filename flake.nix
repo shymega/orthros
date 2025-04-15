@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 The Orthros Developers
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+{
+  description = "Simple flake with a devshell";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+    blueprint.url = "github:numtide/blueprint";
+    blueprint.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  outputs = inputs: inputs.blueprint {inherit inputs;};
+}
