@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 The Orthros Developers <shymega@shymega.org.uk>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# direnv
+.direnv/
+
+# nix
+result
+result-*
