@@ -18,4 +18,11 @@ in
       lockFile = "${finalAttrs.src}/Cargo.lock";
       allowBuiltinFetchGit = true;
     };
+
+    meta = {
+      description = "Solution for distributed Nix builds via a SSH server, in Rust.";
+      maintainers = with lib.maintainers; [shymega];
+      license = lib.licenses.agpl3Only;
+      mainProgram = "orthrosd";
+    };
   })

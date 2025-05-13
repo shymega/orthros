@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 {
-  description = "Simple flake with a devshell";
+  description = "Solution for distributed Nix builds via a SSH server, in Rust.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
