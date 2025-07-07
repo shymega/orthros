@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-only
 {
-  description = "Solution for distributed Nix builds via a SSH server, in Rust.";
+  description = "Distributed Nix builds via the Nix Remote Build protocol, in a scalable fashion.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";

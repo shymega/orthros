@@ -20,7 +20,7 @@ in
     };
 
     meta = {
-      description = "Solution for distributed Nix builds via a SSH server, in Rust.";
+      description = "Distributed Nix builds via the Nix Remote Build protocol, in a scalable fashion.";
       maintainers = with lib.maintainers; [shymega];
       license = lib.licenses.agpl3Only;
       mainProgram = "orthrosd";
