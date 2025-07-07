@@ -4,8 +4,13 @@
 
 [package]
 name = "orthros-common"
-version = "0.0.0"
-edition = "2021"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
 
 [dependencies]
 anyhow = "1.0.98"
