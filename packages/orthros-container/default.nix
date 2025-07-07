@@ -15,7 +15,5 @@ in
     config.Cmd = ["${entryPoint}"];
     contents = [flake.packages.${pkgs.system}.orthros];
     name = "orthros";
-    tag = let
-      version = (import "${flake}/version.nix").version;
-    in "orthros-${version}";
+    tag = "orthros-${import "${flake}/version.nix"}";
   }

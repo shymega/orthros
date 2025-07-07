@@ -10,7 +10,7 @@
 in
   rustPlatform.buildRustPackage (finalAttrs: {
     pname = "orthros";
-    version = (import "${flake}/version.nix").version;
+    version = import "${flake}/version.nix";
 
     src = lib.cleanSource "${flake}/src/rust/.";
 
