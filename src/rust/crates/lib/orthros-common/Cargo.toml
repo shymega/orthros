@@ -26,3 +26,4 @@ thiserror = "2.0.12"
 tracing = "0.1.41"
 tracing-subscriber = "0.3.19"
 uuid = "1.16.0"
+nix-compat.workspace = true
