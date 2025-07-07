@@ -7,8 +7,16 @@ members = [
   "crates/bin/*",
   "crates/lib/*",
 ]
-default-members = [
-  "crates/bin/*",
-  "crates/lib/*"
-]
 resolver = "2"
+
+[workspace.package]
+authors = ["The Orthros Developers"]
+edition = "2021"
+license = "AGPL-3.0-only"
+readme = "/README.md"
+repository = "https://github.com/shymega/orthros"
+rust-version = "1.84.0"
+version = "0.1.0"
+
+[workspace.dependencies]
+nix-compat = { git = "https://code.tvl.fyi/depot.git", rev = "c747cd4f3f822b3ed32ba32b3189270d49ee1aff"}
